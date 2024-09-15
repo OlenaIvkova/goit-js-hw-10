@@ -16,3 +16,67 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  margin: 0;
+}
+
+#datetime-picker {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button[data-start] {
+  width: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[data-start]:disabled {
+  background-color: #a1a1a1;
+  cursor: not-allowed;
+}
+
+button[data-start]:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.timer {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 18px;
+  color: #666;
+}
