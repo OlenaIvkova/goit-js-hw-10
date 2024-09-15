@@ -11,11 +11,11 @@
 @import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
+/* @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./footer.css'); */
 
 
 body {
@@ -38,7 +38,7 @@ body {
   font-size: 16px;
 }
 
-button[data-start] {
+.start-btn[data-start] {
   width: 100px;
   padding: 10px;
   background-color: #007bff;
@@ -50,12 +50,12 @@ button[data-start] {
   transition: background-color 0.3s;
 }
 
-button[data-start]:disabled {
+.start-btn[data-start]:disabled {
   background-color: #a1a1a1;
   cursor: not-allowed;
 }
 
-button[data-start]:hover:not(:disabled) {
+.start-btn[data-start]:hover:not(:disabled) {
   background-color: #0056b3;
 }
 
