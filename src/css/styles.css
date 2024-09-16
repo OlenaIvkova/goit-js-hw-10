@@ -187,3 +187,17 @@ body {
   border-radius: 4px;
   /* padding: 5px 10px; */
 }
+
+.iziToast.error {
+  width: 302px;
+  height: 64px;
+  background-color: #EF4040;
+  border: 2px solid #FFBEBE;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
