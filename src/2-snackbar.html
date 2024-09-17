@@ -14,16 +14,16 @@
 <body>
 
   <form class="form">
-    <label>
+    <label class="form_label">
       Delay (ms)
-      <input type="number" name="delay" required />
+      <input class="form_input" type="number" name="delay" required />
     </label>
 
     <div>
-      <fieldset>
-        <legend>State</legend>
+      <fieldset class="form_fieldset">
+        <legend class="form_legend">State</legend>
         <label>
-          <input type="radio" name="state" value="fulfilled" required />
+          <input class="form-point" type="radio" name="state" value="fulfilled" required />
           Fulfilled
         </label>
         <label>
@@ -34,7 +34,7 @@
     </div>
 
 
-    <button type="submit">Create notification</button>
+    <button class="form_button" type="submit">Create notification</button>
   </form>
 
   <!-- <load src="./partials/header.html" icon-path="./img/sprite.svg#logo" highlight-curr="active" /> -->

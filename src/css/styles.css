@@ -202,61 +202,108 @@ body {
   text-align: left;
 }
 
+.iziToast.success {
+  width: 383px;
+  height: 64px;
+  background-color: #59a10d;
+  border: 2px solid #b5ea7c;
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
 .form {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  border-radius: 4px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  max-width: 360px;
   width: 100%;
 }
 
-.form label {
+.form_label {
   display: block;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #333;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
 }
 
-.form input[type="number"],
-.form input[type="radio"] {
+.form_input[type="number"],
+.form_input[type="radio"] {
   margin-right: 10px;
 }
 
-.form input[type="number"] {
+.form_input[type="number"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #808080;
   border-radius: 4px;
-  width: 100%;
+  width: 360px;
+  height: 40px;
   box-sizing: border-box;
 }
 
-.form fieldset {
-  margin-bottom: 20px;
-  border: none;
+.form_input[type="number"]:hover {
+  border: 1px solid #000000;
+}
+
+.form_input[type="number"]:active {
+  border: 1px solid #4e75ff;
+}
+
+.form_fieldset {
+  border: 1px solid #808080;
   padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
+  gap: 48px;
 }
 
-.form legend {
-  font-weight: bold;
+.form_legend {
+  /* font-weight: bold; */
   margin-bottom: 10px;
+  font-size: 16px;
+  color: #2e2f42;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 24px;
 }
 
-.form button {
-  background-color: #28a745;
+.form-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 14px;
+}
+
+.form-point:hover {
+  background-color: #4e75ff;
+}
+
+.form_button {
+  background-color: #4e75ff;
   color: #fff;
-  padding: 10px 15px;
+  padding: 8px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  width: 100%;
+  width: 360px;
+  height: 40px;
+  gap: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
 }
 
-.form button:hover {
-  background-color: #218838;
-}
-
-.form button:active {
-  background-color: #1e7e34;
+.form_button:hover {
+  background-color: #6c8cff;
 }
