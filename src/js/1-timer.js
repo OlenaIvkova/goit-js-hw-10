@@ -47,7 +47,10 @@ startButton.addEventListener('click', startCountdown);
 function startCountdown() {
     if (userSelectedDate === null) return;
 
+    // щоб вимкнути інпут і кнопку
     startButton.disabled = true;
+    dateTimePicker.disabled = true;
+
     countdownInterval = setInterval(() => {
         const now = new Date();
         const timeRemaining = userSelectedDate - now;
@@ -60,6 +63,9 @@ function startCountdown() {
                 position: 'topRight',
             });
             updateTimerUI(0);
+
+            // треба активувати інпут
+            dateTimePicker.disabled = false;
             return;
         }
 
